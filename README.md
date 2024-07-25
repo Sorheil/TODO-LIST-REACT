@@ -1,9 +1,6 @@
----
-
 # 📋 TodoList React
 
 Une application de liste de tâches intuitive et pratique développée avec React. Gérez vos tâches quotidiennes en ajoutant, modifiant et supprimant facilement des items. Organisez vos tâches par priorité et catégories pour une meilleure productivité !
-Bien sûr, voici une version plus longue de la description pour ton repo GitHub :
 
 ## Description
 
@@ -43,5 +40,4 @@ Pour installer et exécuter cette application localement :
 ## Contribution
 
 Les contributions sont les bienvenues ! N'hésitez pas à ouvrir une issue ou à soumettre une pull request.
-
----
+```
