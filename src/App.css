@@ -1,38 +1,253 @@
-.App {
-  text-align: center;
+/*jost font*/
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sr-only {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+body {
+    background: linear-gradient(to bottom, #4E7AEC, #283B6C);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+main {
+    margin: 0px 117px;
+    border-radius: 30px;
+    padding: 20px 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-family: "Jost", sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+main h1 {
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: white;
+    text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+main button {
+    border: none;
+    background: none;
+}
+
+.btn {
+    width: 180px;
+    height: 60px;
+    background-color: white;
+    border-radius: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.btn-2-5 {
+    width: 450px;
+}
+
+.options-todo {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 40px;
+}
+
+.options-todo .filters {
+    display: flex;
+    column-gap: 20px;
+}
+
+button[aria-pressed="true"] {
+    background-color: #1F4EC9;
+    color: white;
+}
+
+/*table*/
+main table {
+    margin-top: 40px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: white;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+th {
+    padding-top: 20px;
+    font-size: 24px;
+    font-weight: 400
+}
+
+thead,
+th {
+    border-bottom: 2px solid black;
+}
+
+td {
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    padding: 20px;
+}
+
+tr td:last-child {
+    border-right: none;
+}
+
+tr td:first-child {
+    border-left: none;
+}
+
+.section-edit-task {
+    display: flex;
+    gap: 10px;
+    border: none;
+}
+
+.section-edit-task button {
+    cursor: pointer;
+    opacity: 0.5;
+    font-size: 21px;
+}
+
+/* form to create a todo */
+
+form {
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #fff;
+    font-family: "Jost", sans-serif;
+}
+
+.todo-data>* {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+form h1 {
+    text-align: left;
+    color: black;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.todo-data {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(4, auto);
+    row-gap: 66px;
+    column-gap: 40px;
+}
+
+label {
+    font-size: 24px;
+    margin-right: 25px;
+}
+
+input,
+select,
+textarea[id="description"] {
+    width: 330px;
+    height: 33px;
+    font-size: 20px;
+}
+
+input::placeholder {
+    opacity: 0.75;
+}
+
+textarea[id="description"] {
+    height: 90px;
+    resize: none;
+    font-size: 20px;
+}
+
+textarea::placeholder {
+    font-family: "Jost", sans-serif;
+    font-size: 21px;
+}
+
+.form-task {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.form-description {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.form-category {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.form-when {
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+
+.form-priority {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.form-fullfiment {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.form-buttons {
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+
+.form-buttons .btn {
+    border: 2px solid black;
+}
+
+
+.form-buttons button[type="submit"] {
+    background-color: #1F4EC9;
+    color: white;
+    border: none;
+}
+
+/**/
+input[type="range"] {
+    -webkit-appearance: none;
+}
+
+/* Customisation du rail du slider */
+input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8px;
+    cursor: pointer;
+    background: #ccc;
+    /* Couleur de fond du rail */
+    border-radius: 5px;
+    border: none;
+}
+
+/* Customisation du pouce du slider */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    background: #333;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: -6px;
 }
