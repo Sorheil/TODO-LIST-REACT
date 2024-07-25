@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "//sorheil.github.io/TODO-LIST-REACT/static/css/main.2adb26d2.css",
+    "main.js": "//sorheil.github.io/TODO-LIST-REACT/static/js/main.17b713ae.js",
+    "static/js/453.3dd2d477.chunk.js": "//sorheil.github.io/TODO-LIST-REACT/static/js/453.3dd2d477.chunk.js",
+    "index.html": "//sorheil.github.io/TODO-LIST-REACT/index.html",
+    "main.2adb26d2.css.map": "//sorheil.github.io/TODO-LIST-REACT/static/css/main.2adb26d2.css.map",
+    "main.17b713ae.js.map": "//sorheil.github.io/TODO-LIST-REACT/static/js/main.17b713ae.js.map",
+    "453.3dd2d477.chunk.js.map": "//sorheil.github.io/TODO-LIST-REACT/static/js/453.3dd2d477.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2adb26d2.css",
+    "static/js/main.17b713ae.js"
+  ]
+}
